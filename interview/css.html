@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实现两个div水平垂直居中</title>
+    <style>
+        .father {
+            width: 400px;
+            height: 400px;
+            background-color: red;
+        }
+
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        /* 1. flex布局一 */
+        /* .father {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+
+        /* 利用css3新特性 transform */
+        /* .father {
+            position: relative;
+        }
+
+        .son {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } */
+
+
+        /* 3. 使用行内块样式实现 */
+        /* 原来的.father不需要再设置高度 */
+        /* .father {
+            line-height: 500px;
+            text-align: center;
+        }
+
+        .son {
+            display: inline-block;
+            vertical-align: middle;
+            list-style: initial;
+        } */
+
+        /* 4. flex布局二 */
+        /* .father {
+            display: flex;
+        }
+
+        .son {
+            margin: auto;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- 参考文档 https://juejin.cn/post/6991465721565806605 -->
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>

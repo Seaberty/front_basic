@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax练习</title>
+</head>
+
+<body>
+    <script>
+        // 1. 创建xhr对象
+        var xhr = new XMLHttpRequest();
+        // 2. 获取请求信息
+        xhr.open('GET', 'http://127.0.0.1:3000/', true)
+        // 3. 发送请求
+        xhr.send();
+
+        // 4. 获取响应结果
+        xhr.onreadystatechange = function () {
+            // 只有当readyState为4，且status等于200 才是成功的响应结果
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // 响应成功
+                console.log('res', xhr.responseText);
+            }
+        }
+    </script>
+</body>
+
+</html>
