@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html5新特性学习</title>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
+        <polygon points="100,10 40,180 190,60 10,60 160,180"
+            style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;">
+    </svg>
+    <!-- 创建canvas画布 -->
+    <canvas id="myCanvas" width="200px" height="200px" style="border: 1px solid blue;"></canvas>
+    <script>
+        // 1. 获取canvas元素
+        var can = document.getElementById('myCanvas');
+        // 2. 创建context对象
+        var ctx = can.getContext("2d");
+        // 绘制想要的图形
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0, 0, 150, 75);
+    </script>
+</body>
+
+</html>

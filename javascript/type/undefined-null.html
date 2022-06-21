@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>类型相关知识</title>
+</head>
+
+<body>
+    <script>
+        // 1. null与undefined
+        // var n = Number(null) // 0
+
+        // var n = null + 5 // 5
+        // console.log(n);
+        // var f = Number(undefined)
+        // f = undefined + 5 // NaN
+        // console.log(f); // NaN
+
+        // 返回为`undefined`的常见场景如下：
+        // 1. 声明了变量，但没有赋值
+        var hello;
+        console.log(hello); // undefined
+
+        // 2. 调用函数，需要传入参数，但未传入，该参数值为undefined
+        function f(x) {
+            return x;
+        }
+        console.log(f());
+
+        // 3. 获取对象没有赋值的属性
+        var o = new Object();
+        console.log(o.x); // undefined
+
+        // 4. 函数未定义返回值，默认返回undefined
+        function f() { }
+        console.log(f()); // undefined
+    </script>
+</body>
+
+</html>

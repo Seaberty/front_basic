@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象的使用</title>
+</head>
+
+<body>
+    <script>
+        // var obj = {
+        //     foo: 'Hello',
+        //     bar: 'World'
+        // }
+        // // console.log(obj);
+
+
+        // var obj2 = {
+        //     1: 'aa',
+        //     4.2: 'bb',
+        //     // 1+p: 44 // 报错 Unexpected token '+'，需要将1+p 改成'1+p'
+        // }
+        // 键名会自动转为字符串
+        // console.log(obj2['4.2']); // bb
+
+        // var obj3 = {
+        //     plus: function (x) {
+        //         return x + x;
+        //     }
+        // }
+        // console.log(obj3.plus(3)) // 6
+
+        // 对象的引用
+        // var obj4 = {}
+        // var obj5 = obj4
+
+        // obj4.x = 10;
+        // console.log(obj5.x) // 10
+
+        // obj5.y = 3.14
+        // console.log(obj4.y); // 3.14
+
+        // // 取消其中一个对象的引用
+        // obj4 = 1
+        // console.log(obj5); // {x: 10, y: 3.14}
+        // console.log(obj4); // 1
+
+        // 变量的赋值
+        // var x = 10;
+        // var y = x;
+
+        // x = 1;
+        // console.log(y); // 10，变量x改变值后，变量y的值没有发生改变。说明y与x之间不是引用的关系
+
+
+        // 属性读取
+        // var obj = {
+        //     p: 'hello world'
+        // };
+        // // 点运算符获取对象属性
+        // console.log(obj.p); // hello world
+        // // 方括号运算符获取对象属性
+        // console.log(obj['p']); // hello world
+
+        // 属性赋值
+        // var obj = {};
+        // obj.foo = 'hello';
+        // obj['bar'] = 'world';
+        // console.log(obj); // {foo: 'hello', bar: 'world'}
+
+        // 查看属性
+        var obj = {
+            key1: 1,
+            key2: 2
+        };
+
+        console.log(Object.keys(obj)) // ['key1', 'key2']
+    </script>
+</body>
+
+</html>
