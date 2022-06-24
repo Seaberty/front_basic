@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>条件语句</title>
+</head>
+
+<body>
+    <script>
+        // switch 没有break的情况
+        // var x = 1;
+        // switch (x) {
+        //     case 1:
+        //         console.log('x 等于1');
+        //     case 2:
+        //         console.log('x 等于2');
+        //     default:
+        //         console.log('x 等于其他值');
+        // }
+        // x 等于1
+        // x 等于2
+        // x 等于其他值
+
+        // 测试switch表达式与case表达时 采取的是什么类型的比较运算符
+        // var x = 1;
+        // switch (x) {
+        //     case true:
+        //         console.log('x 发生类型转换');
+        //         break;
+        //     default:
+        //         console.log('x 没有发生类型转换');
+        //         break;
+        // }
+        // // x 没有发生类型转换
+
+        // 三元运算符
+        var n = 10;
+        var even = (n % 2 === 0) ? true : false;
+        console.log(even); // true
+    </script>
+</body>
+
+</html>

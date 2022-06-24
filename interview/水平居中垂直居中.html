@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水平居中垂直居中</title>
+    <style>
+        .parent {
+            width: 400px;
+            height: 400px;
+            background-color: orange;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+        }
+
+        /* .parent::after,
+        .son {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .parent::after {
+            content: '';
+            height: 100%;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- 两个div嵌套，如何让子div水平居中垂直居中 -->
+    <div class="parent">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>

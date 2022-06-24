@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number数值</title>
+</head>
+
+<body>
+    <script>
+        // console.log(1 === 1.0); // true
+
+        // var res = 0.1 + 0.2;
+        // console.log(res === 0.3); // false
+        // var res2 = 0.3 / 0.1;
+        // console.log(res2); // 2.9999999999999996
+        // var res3 = (0.2 - 0.1) === (0.3 - 0.2);
+        // console.log(res3); // false
+
+        // console.log(Number);
+
+        // console.log(-0 === +0);
+        // console.log(1 / +0 === 1 / -0); // false
+        // console.log(1 / +0); // Infinity
+        // console.log(1 / -0); // - Infinity
+
+        // NaN
+        var res = 5 - 'x';
+        console.log(res); // NaN
+
+        console.log(NaN === NaN); // false
+
+        console.log(NaN + 10); // NaN
+        console.log(NaN - 10); // NaN
+        console.log(NaN * 10); // NaN
+        console.log(NaN / 10); // NaN
+    </script>
+</body>
+
+</html>
