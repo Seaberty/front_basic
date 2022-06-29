@@ -71,12 +71,53 @@
         // console.log(obj); // {foo: 'hello', bar: 'world'}
 
         // 查看属性
-        var obj = {
-            key1: 1,
-            key2: 2
-        };
+        // var obj = {
+        //     key1: 1,
+        //     key2: 2
+        // };
 
-        console.log(Object.keys(obj)) // ['key1', 'key2']
+        // console.log(Object.keys(obj)) // ['key1', 'key2']
+
+        // 删除属性
+        // var obj = { p: 1 };
+        // console.log(Object.keys(obj)); // ['p']
+        // var res = delete obj.p;
+        // console.log(res); // true
+        // console.log(obj.p); // undefined
+        // console.log(Object.keys(obj)); // []
+
+        // var obj = {};
+        // var res = delete obj.p;
+        // console.log(res); // true
+
+        // in运算符
+        // var obj = { p: 1 };
+        // console.log('p' in obj); // true
+        // console.log('toString' in obj); // true
+        // console.log(obj.hasOwnProperty('toString')); // false
+        // console.log(obj.hasOwnProperty('p')); // true
+
+        // for...in遍历
+        // var obj = { a: 1, b: 2, c: 3 };
+        // for (var i in obj) {
+        //     console.log('键名：' + i);
+        //     console.log('键值是：' + obj[i]);
+        // }
+        // // 键名： a
+        // // 键值： 1
+        // // 键名： b
+        // // 键值： 2
+        // // 键名： c
+        // // 键值： 3
+
+        var person = { name: '张三' };
+        for (var key in person) {
+            if (person.hasOwnProperty(key)) {
+                console.log(key);
+            }
+        }
+
+        // name
     </script>
 </body>
 

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数的使用</title>
+</head>
+
+<body>
+    <script>
+        // function声明
+        // function print(s) {
+        //     console.log(s);
+        // }
+        // print('11') // 11
+
+        // 变量赋值
+        // var print = function x(s) {
+        //     console.log(s);
+        //     console.log(typeof x); // function
+        // };
+
+        // // console.log(x); // x is not defined
+
+        // print(11)
+
+        // Function构造函数
+        // var fun = new Function(
+        //     'x',
+        //     'y',
+        //     'return x+y'
+        // )
+        // console.log(fun(1, 2)); // 3
+
+        // var foo = Function(
+        //     'return "hello world"'
+        // )
+        // // 等价于
+        // function foo() {
+        //     return 'hello world';
+        // }
+        // console.log(foo());
+
+        // 重复声明
+        // function f() {
+        //     console.log(1);
+        // }
+
+        // f() // 2
+
+        // function f() {
+        //     console.log(2);
+        // }
+
+        // f() // 2
+
+        // return 递归
+        // function fib(num) {
+        //     if (num === 0) return 0;
+        //     if (num === 1) return 1;
+
+        //     // console.log('----' + num);
+        //     return fib(num - 2) + fib(num - 1);
+        // }
+        // console.log(fib(6)); // 8
+
+        // function add(x, y) {
+        //     return x + y;
+        // }
+        // var res = add(1, 1)
+        // console.log(res); // 2
+
+        // // 第一等公民
+        // function add(x, y) {
+        //     return x + y;
+        // }
+
+        // // 将函数赋值给一个变量
+        // var operate = add;
+        // console.log(typeof operate); // function
+
+        // // 将函数作为参数和返回值
+        // function getOri(op) {
+        //     return op;
+        // }
+
+        // var res = getOri(add)(1, 1);
+        // console.log(res); // 2
+
+        // 函数名提升
+        // f();
+        // function f() { }
+
+        // f();
+        // var f = function () { }; // Uncaught TypeError: f is not a function
+
+        // var f = function () {
+        //     console.log(1);
+        // };
+
+        // function f() {
+        //     console.log(2);
+        // }
+
+        // f(); // 1
+
+
+        // 属性和方法
+        // function f1() {
+        // }
+        // console.log(f1.name); // f1
+        // var f2 = function () { };
+        // console.log(f2.name); // 'f2'
+
+        // var f3 = function myFunc() { };
+        // console.log(f3.name); // 'myFunc'
+
+        // var myFunc = function () { };
+        // function test(f) {
+        //     console.log(f.name);
+        // }
+
+        // test(myFunc) // 'myFunc'
+
+        // length属性
+        // function f(a, b) { }
+        // console.log(f.length); // 2
+
+        // toString方法
+        function add(x, y) {
+            return x + y;
+        }
+
+        console.log(add.toString())
+        // function add(x, y) {
+        //     return x + y;
+        // }
+    </script>
+</body>
+
+</html>
