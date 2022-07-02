@@ -1,0 +1,58 @@
+<!-- 声明为HTML5文档 -->
+<!DOCTYPE html>
+<!-- html是页面根元素，且定义网页语言类型 -->
+<html lang="zh-CN">
+<!-- head包含了文档的元数据 -->
+
+<head>
+    <!-- 定义网页编码格式 -->
+    <meta charset="UTF-8">
+    <!-- 描述网页标题内容 -->
+    <title>html基础学习</title>
+    <style>
+        .parent {
+            font-size: 18px;
+        }
+
+        span {
+            border: 1px solid red;
+            display: block;
+        }
+    </style>
+</head>
+<!-- body包含了页面的课件内容 -->
+
+<body>
+    <!-- 定义一个超链接 -->
+    <!-- <a href="https://bysjb.cn">这是一个链接</a> -->
+    <!-- 创建一个名为img的锚点 -->
+    <a href="#img">跳转图片</a>
+    <h1>Hello World</h1>
+    <h2>Hello World</h2>
+    <h3>Hello World</h3>
+    <h4>Hello World</h4>
+    <h5>Hello World</h5>
+    <h6>Hello World</h6>
+    <h7>Hello World</h7>
+    <p>这是一个段落</p>
+    <a href="https://www.baidu.com" name="img">百度搜索</a>
+    <!-- <img src="../images/1.png" alt=""> -->
+    <img src="" alt="haha ">
+    <p>哈哈</p>
+
+    <hr />
+    <div class="parent">
+        <span>哈哈哈</span>
+        <span>哈哈哈</span>
+    </div>
+    <hr>
+    <form action="/html/basic.html" method="get" target="_blank">
+        姓名 <input type="text" name="name"><br />
+        性别 <input type="radio" name="sex" value="男">男
+        <input type="radio" name="sex" value="女">女<br>
+        <input type="submit" value="提交">
+        <input type="button" value="猜测">
+    </form>
+</body>
+
+</html>
