@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>边框</title>
+    <style>
+        p {
+            width: 200px;
+        }
+
+        .one {
+            border-style: solid;
+            /* border-width: 10px 5px 20px 6px; */
+            border-width: thin;
+        }
+
+        .two {
+            border-top-style: dotted;
+            border-right-style: dashed;
+            border-bottom-style: double;
+            border-left-style: solid;
+        }
+
+        .three {
+            border-style: dotted dashed double solid;
+        }
+
+        .four {
+            border: 2px solid red;
+        }
+
+        .five {
+            border-bottom: 2px dashed skyblue;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="one">这是一个段落</p>
+    <p class="two">这是一个段落</p>
+    <p class="three">这是一个段落</p>
+    <p class="four">这是一个段落</p>
+    <p class="five">这是一个段落</p>
+    <p class="six">这是一个段落</p>
+</body>
+
+</html>
